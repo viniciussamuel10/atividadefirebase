@@ -1,0 +1,62 @@
+<html>
+    <head>
+
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+     <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+ 
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+ 
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+ 
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDu6S3sy0ac3vT1bHD2hugMjwmU4Qtf02A",
+            authDomain: "escola2022-3e379.firebaseapp.com",
+            databaseURL: "https://escola2022-3e379-default-rtdb.firebaseio.com",
+            projectId: "escola2022-3e379",
+            storageBucket: "escola2022-3e379.appspot.com",
+            messagingSenderId: "1095343015613",
+            appId: "1:1095343015613:web:54686d3b63b5dda0cd59d4",
+            measurementId: "G-QWHTZWZKND"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="disciplinas.js"></script>
+
+    </head>
+    <div >
+        <header>
+            <div>
+                <div>
+                    <h1>Escola<h1>
+                </div>
+                <nav>
+                    <a class='btn btn-primary' href="../index/index.html">Início</a> <a class='btn btn-primary' href="../alunos/alunos.html">Alunos</a> <a class='btn btn-primary' href="../professores/professores.html">Professores</a> <a class="btn btn-primary" href="../disciplinas/disciplinas.html">Disciplina</a>
+                </nav>
+            </div>
+        </header>
+        <hr/>
+    <body>
+        <table id="tbDisciplinas">
+            <thead>
+            <tr>
+                <th>nome</th>
+                <th>cargahoraria</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+    </body>
+</html>
